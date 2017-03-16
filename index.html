@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Joe's Form Validation</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <form class="form" action="index.html" method="post">
@@ -12,8 +13,10 @@
       <input id="lasttName" type="text" name="lastName">
       <label for="emailAddress">Email Address</label>
       <input id="emailAddress" type="text" name="lastName">
-      <label for="country">Country</label>
-      <input id="country" type="text" name="lastName">
+
+      <label for='country2'>Country</label>
+      <select id="country2" name ="country2"></select>
+
       <label for="biography">Biography</label>
       <input id="biography" type="text" name="lastName">
       <label for="phoneNumber">Phone Number</label>
@@ -28,6 +31,8 @@
       <input id="favgadget" type="text" name="lastName">
       <label for="talent">Type of Talent</label>
       <input id="talent" type="text" name="lastName">
+      <!-- <label for='talent2'>Talent</label>
+      <select id="talent2" name ="talent2"></select> -->
       <label for="drink">Favorite Drink</label>
       <input id="drink" type="text" name="lastName">
       <label for="power">Favorite Power</label>
@@ -38,7 +43,19 @@
       <input id="comments" type="text" name="lastName">
     </form>
     <button id="button" type="button" name="button">Submit</button>
-    
+
+    <script type= "text/javascript" src = "countries.js"></script>
+    <script language="javascript">
+    	// populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+    	populateCountries("country2");
+    	populateCountries("country2");
+    </script>
+    <!-- <script type= "text/javascript" src = "talents.js"></script>
+    <script language="javascript">
+    	// populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+    	populateTalents("talent2");
+    	populateTalents("talent2"); -->
+    </script>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

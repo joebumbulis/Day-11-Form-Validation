@@ -1,0 +1,13 @@
+form {
+  color: #fff;
+  background: #5692C9;
+}
+
+label {
+  position: relative
+}
+
+input {
+  position: absolute
+  bottom: 0;
+}
